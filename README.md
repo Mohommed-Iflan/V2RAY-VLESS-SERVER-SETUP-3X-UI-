@@ -2,13 +2,13 @@
 This Repository Guild you to how to create a V2RAY VLESS SERVER FREELY! and you can spoof/tunnel your network through the server
 
 
-> [!CAUTION]
+> [!WARNING]
 > ### ⚠️ Usage Policy & Credits
 > **Everyone is permitted to utilize this resource, and it must not be sold to others. This is intended solely for personal use. This approach will ensure that technology remains accessible to all and fosters the development of an organic technology community.**
 
 ---
 
-# Beginner's Guide: Setting Up an AWS VLESS-TLS Proxy Server
+# Guide: Setting Up an AWS VLESS-TLS Proxy Server
 
 This guide provides a complete, step-by-step walkthrough for setting up your own secure proxy server on an AWS cloud instance using 3X-UI. It is written in simple terms so anyone—even without technical experience—can follow along.
 
