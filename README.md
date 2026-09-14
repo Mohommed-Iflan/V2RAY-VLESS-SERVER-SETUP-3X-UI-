@@ -14,7 +14,7 @@
 4. [Step 3: Connect to Your Server](#step-3-connect-to-your-server)
 5. [Step 4: Automated Server Setup & Installation](#Step-4-Automated-Server-Setup-&-Installation)
 6. [Step 5: Configure Your Proxy Panel](#Step-5-Setup-the-Inbound)
-7. [Step 6: Important: Research and help to community](#RESEARCH)
+7. [Step 6: Important: Other Mobile Plan Configuration](#RESEARCH)
 
 ---
 
@@ -231,8 +231,8 @@ then use the username password to login to the panel
 5. then click import
 6. Click on 3 dots - Export All URLS
 7. Copy the URL and import it in your client app (eg.NetMod)
-## RESEACH
+## RESEARCH
 > [!IMPORTANT]
-> **If you're using different mobile plans, it would be great to explore all the inbound options to ensure everything works smoothly by adjusting the inbound settings. Perhaps you could take some time to research this and kindly share your findings in the comments below with your successful inbound setup—it would be incredibly helpful for others! Thank you!**
+> **If you're using different mobile plans, it would be great to explore all the inbound options to ensure everything works smoothly by adjusting the inbound settings. Perhaps you could take some time to research this and kindly share your findings send a message to the Telegram, with your successful inbound setup—it would be incredibly helpful for others! I will upload your config to this repo with your proper credits, Thank you!**
 
 ---
