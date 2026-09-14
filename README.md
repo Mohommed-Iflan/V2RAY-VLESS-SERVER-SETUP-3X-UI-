@@ -26,7 +26,7 @@ This guide provides a complete, step-by-step walkthrough for setting up your own
 ---
 
 ## Step 1: Create an AWS Account & Server (EC2)
-1. Go to [aws.amazon.com](https://aws.amazon.com/) and sign up for a free account if you haven't already.
+1. Go to [aws.amazon.com](https://aws.amazon.com/) and sign up for a free account if you haven't already. [This Free Tier is only for 6 months] (you may ask for card details to verify the free tier account, but you don't charge until you upgrade to premium even the trial period end. make sure you hold 1-2 USD in your card for successful verification.)
 2. Log in to the **AWS Management Console**.
 3. In the search bar at the top, type **EC2** and click on the EC2 service.
 4. Click on **Launch Instance**.
