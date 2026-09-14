@@ -13,8 +13,8 @@
 3. [Step 2: Open Required Network Ports](#step-2-open-required-network-ports)
 4. [Step 3: Connect to Your Server](#step-3-connect-to-your-server)
 5. [Step 4: Automated Server Setup & Installation](##Step-4:-Automated-Server-Setup-&-Installation)
-6. [Step 5: Configure Your Proxy Panel](#step-5-configure-your-proxy-panel)
-7. [Step 6: Connect Your Phone or Computer](#step-6-connect-your-phone-or-computer)
+6. [Step 5: Configure Your Proxy Panel](##Step-5:-Setup-the-Inbound)
+7. [Step 6: Important: Research and help to community](##RESEARCH)
 
 ---
 
@@ -99,6 +99,7 @@ if prompted select the options like in image
 then use the username password to login to the panel
 <img width="1360" height="720" alt="image" src="https://github.com/user-attachments/assets/c031ce4d-b189-483c-8c1f-694bcc0b2ff2" />
 
+# Step 5: Setup the Inbound
 ## Now you successfully completed the setup, so you can add inbound that fits you! 
 ### EXTRA - I created an inbound for `Airtel YouTube Unlimited 260/=`
 1. Click on Inbounds
@@ -230,7 +231,7 @@ then use the username password to login to the panel
 5. then click import
 6. Click on 3 dots - Export All URLS
 7. Copy the URL and import it in your client app (eg.NetMod)
-
+## RESEACH
 > [!IMPORTANT]
 > **If you're using different mobile plans, it would be great to explore all the inbound options to ensure everything works smoothly by adjusting the inbound settings. Perhaps you could take some time to research this and kindly share your findings in the comments below with your successful inbound setup—it would be incredibly helpful for others! Thank you!**
 
