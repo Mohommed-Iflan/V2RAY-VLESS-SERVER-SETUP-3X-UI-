@@ -1,49 +1,60 @@
 # V2RAY-VLESS-SERVER-SETUP-3X-UI-
 This Repository Guild you to how to create a V2RAY VLESS SERVER FREELY! and you can spoof/tunnel your network through the server
 
-# AWS VLESS-TLS Proxy Server with 3X-UI
+# Beginner's Guide: Setting Up an AWS VLESS-TLS Proxy Server
 
-A comprehensive guide and automated setup script for deploying a high-performance VLESS + TCP + TLS proxy server on an AWS EC2 instance using 3X-UI. Designed for optimizing data packages (such as YouTube-specific unlimited bundles) and ensuring seamless proxy routing.
-
----
-
-## Features
-* **Lightweight & Efficient:** Runs smoothly on AWS free-tier instances (`t3.micro`).
-* **Secure TLS Encryption:** Uses custom domain SNI masking (`youtube.com`).
-* **Easy Management:** Powered by the intuitive 3X-UI web dashboard.
-* **Automated Setup:** Includes quick scripts for certificate generation and dependency configuration.
+This guide provides a complete, step-by-step walkthrough for setting up your own secure proxy server on an AWS cloud instance using 3X-UI. It is written in simple terms so anyone—even without technical experience—can follow along.
 
 ---
 
-## Prerequisites
-* An active **AWS Account** with EC2 access.
-* A client proxy app (e.g., **v2rayNG** for Android, **Hiddify**, or v2rayN for desktop).
+## Table of Contents
+1. [What You Will Need](#what-you-will-need)
+2. [Step 1: Create an AWS Account & Server (EC2)](#step-1-create-an-aws-account--server-ec2)
+3. [Step 2: Open Required Network Ports](#step-2-open-required-network-ports)
+4. [Step 3: Connect to Your Server](#step-3-connect-to-your-server)
+5. [Step 4: Automated Server Setup & Installation](#step-4-automated-server-setup--installation)
+6. [Step 5: Configure Your Proxy Panel](#step-5-configure-your-proxy-panel)
+7. [Step 6: Connect Your Phone or Computer](#step-6-connect-your-phone-or-computer)
 
 ---
 
-## Step 1: AWS EC2 Instance Setup
-1. Launch a new EC2 instance (recommended: **Ubuntu 24.04** or **Amazon Linux 2023**, `t3.micro`).
-2. Configure **Security Groups** to allow inbound traffic on the following ports:
-   * **TCP 443** (Proxy traffic)
-   * **TCP 2053** (3X-UI Web Panel)
-   * **TCP 22** (SSH access)
-3. Select your instance in the EC2 console, go to **Actions > Networking**, and ensure **Source/Destination Check** is **Disabled**.
+## What You Will Need
+* A computer (Windows, Mac, or Linux).
+* A free **AWS (Amazon Web Services)** account.
+* A mobile phone or computer to use the internet through your new proxy.
 
 ---
 
-## Step 2: Automated Server Configuration & Installation
-Connect to your AWS instance via SSH, switch to root, and run the following automated setup script to install dependencies and generate the required TLS certificates:
+## Step 1: Create an AWS Account & Server (EC2)
+1. Go to [aws.amazon.com](https://aws.amazon.com/) and sign up for a free account if you haven't already.
+2. Log in to the **AWS Management Console**.
+3. In the search bar at the top, type **EC2** and click on the EC2 service.
+4. Click on **Launch Instance**.
+5. Give your server a name (e.g., `MyProxyServer`).
+6. **Operating System:** Select **Ubuntu** (choose version 24.04 or latest LTS).
+7. **Instance Type:** Select **t3.micro** (this is usually covered under the AWS Free Tier).
+8. **Key Pair:** Click *Create new key pair*, name it something simple like `my-key`, download it, and save it somewhere safe on your computer.
+9. Click the orange **Launch Instance** button on the right.
 
-```bash
-sudo -i
-# Update system packages
-apt update && apt install -y curl wget openssl
+---
 
-# Generate SSL certificates for VLESS-TLS
-mkdir -p /etc/x-ui
-openssl req -x509 -newkey rsa:2048 -keyout /etc/x-ui/server.key -out /etc/x-ui/server.crt -days 3650 -nodes -subj "/CN=youtube.com"
-chmod 644 /etc/x-ui/server.crt
-chmod 600 /etc/x-ui/server.key
+## Step 2: Open Required Network Ports
+Before your server can talk to the outside world, you need to open specific doors (ports) in the AWS firewall:
+1. From your EC2 Dashboard, click on your running instance, then click on the **Security** tab at the bottom.
+2. Click on your **Security Group** link (starts with `sg-...`).
+3. Click **Edit inbound rules**.
+4. Add the following three rules:
+   * **Rule 1:** Type: `SSH` | Port: `22` | Source: `Anywhere-IPv4 (0.0.0.0/0)`
+   * **Rule 2:** Type: `Custom TCP` | Port Range: `443` | Source: `Anywhere-IPv4 (0.0.0.0/0)`
+   * **Rule 3:** Type: `Custom TCP` | Port Range: `2053` | Source: `Anywhere-IPv4 (0.0.0.0/0)`
+5. Click **Save rules**.
+6. Go back to your Instance summary, look for **Source / destination check**, click *Actions > Networking*, and **Stop / Disable** it.
 
-# Install 3X-UI panel
-bash <(curl -Ls [https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh](https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh))
+---
+
+## Step 3: Connect to Your Server
+1. Find your server's **Public IPv4 address** on your EC2 instance dashboard (it looks like `3.x.x.x`).
+2. Open your computer's terminal (Command Prompt on Windows, or Terminal on Mac/Linux).
+3. Connect to your server using SSH by typing:
+   ```bash
+   ssh -i "path/to/your-key.pem" ubuntu@YOUR_SERVER_IP
