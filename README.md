@@ -49,6 +49,7 @@ Before your server can talk to the outside world, you need to open specific door
    * **Rule 3:** Type: `Custom TCP` | Port Range: `2053` | Source: `Anywhere-IPv4 (0.0.0.0/0)`
 5. Click **Save rules**.
 6. Go back to your Instance summary, look for **Source / destination check**, click *Actions > Networking*, and **Stop / Disable** it.
+<img width="1360" height="720" alt="image" src="https://github.com/user-attachments/assets/d79a2b03-927b-4b2b-a55e-041fafd2a058" />
 
 ---
 
