@@ -54,8 +54,8 @@ Before your server can talk to the outside world, you need to open specific door
 ---
 
 ## Step 3: Connect to Your Server
-1. Find your server's **Public IPv4 address** on your EC2 instance dashboard (it looks like `3.x.x.x`).
-2. Open your computer's terminal (Command Prompt on Windows, or Terminal on Mac/Linux).
-3. Connect to your server using SSH by typing:
+1. Find your server's **Public IPv4 address** on your EC2 instance dashboard (it looks like `3.x.x.x`, You can easily find in instances page it named like "Public IPv4 address").
+3. Open your computer's terminal (Command Prompt on Windows, or Terminal on Mac/Linux).
+4. Connect to your server using SSH by typing: (Replace you actual Public IPv4 address with 'YOUR_SERVER_IP')
    ```bash
-   ssh -i "path/to/your-key.pem" ubuntu@YOUR_SERVER_IP
+   ssh -i "path/to/my-key.pem" ubuntu@YOUR_SERVER_IP
