@@ -1,8 +1,12 @@
 # V2RAY-VLESS-SERVER-SETUP-3X-UI-
 This Repository Guild you to how to create a V2RAY VLESS SERVER FREELY! and you can spoof/tunnel your network through the server
 
-### ⚠️ Usage Policy & Credits
-**Everyone can use this and do not sell to any others. This is only for personal usage. This will make sure all tech is common for everyone and builds an organic tech community.**
+
+> [!CAUTION]
+> ### ⚠️ Usage Policy & Credits
+**Everyone is permitted to utilize this resource, and it must not be sold to others. This is intended solely for personal use. This approach will ensure that technology remains accessible to all and fosters the development of an organic technology community.**
+
+---
 
 # Beginner's Guide: Setting Up an AWS VLESS-TLS Proxy Server
 
@@ -235,6 +239,6 @@ then use the username password to login to the panel
 7. Copy the URL and import it in your client app (eg.NetMod)
 
 > [!IMPORTANT]
-> **If you are using other mobile plans, you need to explore all the inbound options to make it work by changing inbound settings. Please research that and leave a comment below with your working inbound—it will be very useful for others!**
+> **If you're using different mobile plans, it would be great to explore all the inbound options to ensure everything works smoothly by adjusting the inbound settings. Perhaps you could take some time to research this and kindly share your findings in the comments below with your successful inbound setup—it would be incredibly helpful for others! Thank you!**
 
 ---
