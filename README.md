@@ -12,7 +12,7 @@
 2. [Step 1: Create an AWS Account & Server (EC2)](#step-1-create-an-aws-account--server-ec2)
 3. [Step 2: Open Required Network Ports](#step-2-open-required-network-ports)
 4. [Step 3: Connect to Your Server](#step-3-connect-to-your-server)
-5. [Step 4: Automated Server Setup & Installation](#step-4-automated-server-setup--installation)
+5. [Step 4: Automated Server Setup & Installation](##Step-4:-Automated-Server-Setup-&-Installation)
 6. [Step 5: Configure Your Proxy Panel](#step-5-configure-your-proxy-panel)
 7. [Step 6: Connect Your Phone or Computer](#step-6-connect-your-phone-or-computer)
 
