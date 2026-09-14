@@ -4,7 +4,7 @@ This Repository Guild you to how to create a V2RAY VLESS SERVER FREELY! and you 
 
 > [!CAUTION]
 > ### ⚠️ Usage Policy & Credits
-**Everyone is permitted to utilize this resource, and it must not be sold to others. This is intended solely for personal use. This approach will ensure that technology remains accessible to all and fosters the development of an organic technology community.**
+> **Everyone is permitted to utilize this resource, and it must not be sold to others. This is intended solely for personal use. This approach will ensure that technology remains accessible to all and fosters the development of an organic technology community.**
 
 ---
 
