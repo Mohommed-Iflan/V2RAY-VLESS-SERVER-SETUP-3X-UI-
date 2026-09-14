@@ -99,10 +99,134 @@ if prompted select the options like in image
 then use the username password to login to the panel
 <img width="1360" height="720" alt="image" src="https://github.com/user-attachments/assets/c031ce4d-b189-483c-8c1f-694bcc0b2ff2" />
 
-5. 
+## Now you successfully completed the setup, so you can add inbound that fits you! 
+### EXTRA - I created an inbound for `Airtel YouTube Unlimited 260/=`
+1. Click on Inbounds
+2. Click on General Actions
+3. Then click on `Import an Inbound`
+4. Copy and paste this JSON
 ```bash
-   apt update && apt install -y curl wget openssl
+  {
+  "id": 1,
+  "userId": 0,
+  "up": 13405416640,
+  "down": 34734063179,
+  "total": 0,
+  "remark": "YOUTUBE-V2RAY",
+  "enable": true,
+  "expiryTime": 0,
+  "trafficReset": "never",
+  "trafficResetDay": 1,
+  "lastTrafficResetTime": 0,
+  "listen": "",
+  "port": 443,
+  "protocol": "vless",
+  "settings": {
+    "clients": [
+      {
+        "auth": "laiq8wezox6o2h47",
+        "comment": "",
+        "created_at": 1788695470589,
+        "email": "ADMIN",
+        "enable": true,
+        "expiryTime": 0,
+        "id": "fc10bc82-109c-4ffb-840b-87b1e726fcdc",
+        "limitIp": 0,
+        "password": "58dnafdef36mwtom",
+        "reset": 0,
+        "resetDay": 0,
+        "resetMax": 0,
+        "security": "auto",
+        "subId": "nex400uj1op2cfzv",
+        "tgId": 0,
+        "totalGB": 0,
+        "trafficReset": "never",
+        "trafficResetDay": 1,
+        "updated_at": 1789363344000
+      }
+    ],
+    "decryption": "none",
+    "encryption": "none"
+  },
+  "streamSettings": {
+    "network": "tcp",
+    "tcpSettings": {
+      "acceptProxyProtocol": false,
+      "header": {
+        "type": "none"
+      }
+    },
+    "security": "tls",
+    "tlsSettings": {
+      "serverName": "youtube.com",
+      "minVersion": "1.2",
+      "maxVersion": "1.3",
+      "cipherSuites": "",
+      "rejectUnknownSni": false,
+      "disableSystemRoot": false,
+      "enableSessionResumption": false,
+      "certificates": [
+        {
+          "certificateFile": "/etc/x-ui/server.crt",
+          "keyFile": "/etc/x-ui/server.key",
+          "ocspStapling": 0,
+          "oneTimeLoading": false,
+          "usage": "encipherment",
+          "buildChain": false
+        }
+      ],
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "echServerKeys": "",
+      "settings": {
+        "fingerprint": "chrome",
+        "echConfigList": "",
+        "pinnedPeerCertSha256": [],
+        "verifyPeerCertByName": ""
+      }
+    }
+  },
+  "tag": "in-443-tcp",
+  "sniffing": {
+    "enabled": true,
+    "destOverride": [
+      "http",
+      "tls",
+      "quic",
+      "fakedns"
+    ]
+  },
+  "clientStats": [
+    {
+      "id": 3,
+      "inboundId": 1,
+      "enable": true,
+      "email": "ADMIN",
+      "uuid": "fc10bc82-109c-4ffb-840b-87b1e726fcdc",
+      "subId": "nex400uj1op2cfzv",
+      "up": 13340867918,
+      "down": 34669730741,
+      "expiryTime": 0,
+      "total": 0,
+      "reset": 0,
+      "resetDay": 0,
+      "resetMax": 0,
+      "resetCount": 0,
+      "lastOnline": 1789376880002,
+      "lastSubFetch": 0
+    }
+  ],
+  "nodeId": null,
+  "shareAddrStrategy": "listen",
+  "shareAddr": "",
+  "subSortIndex": 1,
+  "disableFlow": false,
+  "originNodeGuid": "",
+  "fallbackParent": null
+}
 ```
-```bash
-   apt update && apt install -y curl wget openssl
-```
+5. then click import
+6. Click on 3 dots - Export All URLS
+7. Copy the URL and import it in your client app (eg.NetMod)
