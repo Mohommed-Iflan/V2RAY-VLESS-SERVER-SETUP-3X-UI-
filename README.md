@@ -60,3 +60,49 @@ Before your server can talk to the outside world, you need to open specific door
 
    ```bash
    ssh -i "path/to/my-key.pem" ubuntu@YOUR_SERVER_IP
+
+---
+
+## Step 4: Automated Server Setup & Installation
+Once you are logged into your server terminal, run these commands one by one:
+
+1. Give the root access
+
+```bash
+   sudo -i
+```
+```bash
+   apt update && apt install -y curl wget openssl
+```
+```bash
+   mkdir -p /etc/x-ui
+```
+2. This is a SSL Certificate created for `youtube.com`
+```bash
+  openssl req -x509 -newkey rsa:2048 -keyout /etc/x-ui/server.key -out /etc/x-ui/server.crt -days 3650 -nodes -subj "/CN=youtube.com"
+```
+```bash
+   chmod 644 /etc/x-ui/server.crt
+```
+```bash
+   chmod 600 /etc/x-ui/server.key
+```
+3. Install 3X-UI
+```bash
+   bash <(curl -Ls [https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh](https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh))
+```
+if prompted select the options like in image 
+<img width="1114" height="590" alt="image" src="https://github.com/user-attachments/assets/fcc5f6e2-4faf-42cd-97cd-d6a8103dda10" />
+
+3. After that Scroll up along in command prompt you can see all the details of your panel is showing up in there, copy the access link and paste it in the browser.
+<img width="1114" height="267" alt="image" src="https://github.com/user-attachments/assets/44151dc6-2412-4ba5-9c10-05416e828d13" />
+then use the username password to login to the panel
+<img width="1360" height="720" alt="image" src="https://github.com/user-attachments/assets/c031ce4d-b189-483c-8c1f-694bcc0b2ff2" />
+
+5. 
+```bash
+   apt update && apt install -y curl wget openssl
+```
+```bash
+   apt update && apt install -y curl wget openssl
+```
